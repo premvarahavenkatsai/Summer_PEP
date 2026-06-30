@@ -1,13 +1,16 @@
 class Solution {
-    Input: prices = [7,1,5,3,6,4]
-    Output: 5
+    public static void main(String[] args) {
+        int[] prices = {7,1,5,3,6,4};
+        int ans = new Solution().maxProfit(prices);
+        System.out.println(ans);
+    }
+
     public int maxProfit(int[] prices) {
-        int n = prices.length;
         int cp = Integer.MAX_VALUE;
         int profit = 0;
-        for(int i:prices){
-            if(cp > i) cp = i;
-            profit = Math.max(profit,Math.abs(i -cp));
+        for (int price : prices) {
+            if (cp > price) cp = price;
+            profit = Math.max(profit, price - cp);
         }
         return profit;
     }
