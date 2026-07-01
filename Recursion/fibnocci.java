@@ -1,6 +1,5 @@
 package Recursion;
 
-import java.util.*;
 public class fibnocci{
     public static int fibonacci(int n){
         if(n == 0){

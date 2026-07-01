@@ -1,6 +1,6 @@
 package Recursion;
 
-public class linear {
+class LinearSearch {
     public static void main(String[] args) {
         int[] arr = {3,7,2,9,8,5,4,10};
         boolean found = linearsearch(arr, 0, 5);
