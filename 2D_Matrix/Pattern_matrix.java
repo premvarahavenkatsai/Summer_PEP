@@ -1,4 +1,4 @@
-public class SumOfRow{
+public class Pattern_matrix{
  public static void main(String[] args){
       int[][] matrix = {
          {6,11,4,10},
